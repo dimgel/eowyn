@@ -32,6 +32,6 @@ Currently developing HTTP/2 support, because "fastest possible webserver without
 
 ### Legal
 
-Currently closed-source; only documentation and examples (non-buildable without library) will be published here. Once HTTP/2 support is complete, I plan to either sell it or go for crowdfunding and open-source.
+Currently closed-source; only documentation and examples (sources and binaries) will be published here. Once HTTP/2 support is complete, I plan to either sell it or go for crowdfunding and open-source.
 
 -- Dmitry Grigoriev, [mail@dimgel.ru](mailto:mail@dimgel.ru)
