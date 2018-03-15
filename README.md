@@ -12,7 +12,7 @@ This is acheived by extensive use of code generation. Application developer prov
 
 During request processing, ***eowyn*** parses request headers and parameters in single pass directly into generated structures, compact and convenient. For example, `Content-Length` is stored as integer; dates (like `If-Modified-Since`) are stored as integer timestamps. Multi-level parameter structures and arrays are supported. User-defined headers and parameter types are supported.
 
-Keen knowledge of application needs also allows to significantly optimize some server internals.
+Keen knowledge of application's needs also allows to significantly optimize some server internals.
 
 Obviously, ***eowyn*** cannot be used as proxy server: since she parses requests into hard-coded application-defined structures, she cannot accept and pass through arbitrary requests. So she can operate only as end-station in HTTP request processing.
 
