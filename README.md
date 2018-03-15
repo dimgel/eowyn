@@ -10,7 +10,7 @@ In progress.
 
 This is acheived by extensive use of code generation. Application developer provides metadata which contains URI-to-handler map, request headers and parameter structures accepted by various URI handlers, etc. Then during application build process, `eowyn-buildtime` uses that metadata to generate parts of `eowyn-runtime`: runtime structures, header and parameter parsers, etc. Generated parsers are LL(1): no table-drivens, no regexps, no compromises, only ultimate speed with some `x86-64`-specific optimizations.
 
-During request processing, ***eowyn*** parses request headers and parameters directly into generated structures in parsed form, compact and convenient. For example, `Content-Length` is stored as integer; dates (like `If-Modified-Since`) are stored as integer timestamps. Multi-level parameter structures and arrays are supported. User-defined headers and parameter types are supported.
+During request processing, ***eowyn*** parses request headers and parameters in single pass directly into generated structures, compact and convenient. For example, `Content-Length` is stored as integer; dates (like `If-Modified-Since`) are stored as integer timestamps. Multi-level parameter structures and arrays are supported. User-defined headers and parameter types are supported.
 
 Keen knowledge of application needs also allows to significantly optimize some server internals.
 
