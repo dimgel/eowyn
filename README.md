@@ -4,6 +4,10 @@ Embedded-Only Webserver for C++ & Linux & x86-64. Fastest possible.
 
 In progress.
 
+Currently closed-source; only documentation and examples (sources and binaries) will be published here. Once HTTP/2 support is complete, I plan to either sell it or go for crowdfunding and open-source.
+
+-- Dmitry Grigoriev, [mail@dimgel.ru](mailto:mail@dimgel.ru)
+
 ## Concept
 
 ***Eowyn*** web server integrates with embedding web application as tight as possible, aiming to completely eliminate perfomance and memory overhead of communication between server and application, including overhead of converting request data between different representations used by server and application.
@@ -29,9 +33,3 @@ Few heavily commented usage examples are ready; not sure if should publish them 
 ### What's in progress
 
 Currently developing HTTP/2 support, because "fastest possible webserver without HTTP/2 support" sounds stupid. SSL support will come along as it's necessary for protocol negotiation. Parameter validators ifrastructure is also implemented in this branch.
-
-### Legal
-
-Currently closed-source; only documentation and examples (sources and binaries) will be published here. Once HTTP/2 support is complete, I plan to either sell it or go for crowdfunding and open-source.
-
--- Dmitry Grigoriev, [mail@dimgel.ru](mailto:mail@dimgel.ru)
